@@ -12,4 +12,10 @@
 4. 在右上角会出现图标
 5. 点击开关图标
 
+## 截图
+
+![image](https://github.com/hacker-frok/LiteLoaderQQNT-Plugin-Brevity-btn/assets/157203458/3bd09cbd-b2f6-48db-9541-a2b884869fe6)
+
+![image](https://github.com/hacker-frok/LiteLoaderQQNT-Plugin-Brevity-btn/assets/157203458/ff388ce0-2a1c-4baa-a473-0d70b8402d88)
+
 
