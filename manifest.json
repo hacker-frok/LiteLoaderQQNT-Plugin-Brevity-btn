@@ -15,7 +15,11 @@
   ],
   "repository": {
     "repo": "hacker-frok/LiteLoaderQQNT-Plugin-Brevity-btn",
-    "branch": "main"
+    "branch": "main",
+    "use_release": {
+        "tag": "1.0.1",
+        "name": "LiteLoaderQQNT-Plugin-Brevity-btn-main.zip"
+    }
   },
   "platform": [
     "win32",
