@@ -4,7 +4,7 @@
   "name": "QQ纯享模式",
   "slug": "brevity-btn",
   "description": "隐藏侧栏部位，并在顶部添加快速显示/隐藏按钮，带来纯纯的聊天模式.",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "icon": "./icon.png",
   "thumbnail": "./icon.png",
   "authors": [
@@ -16,9 +16,8 @@
   "repository": {
     "repo": "hacker-frok/LiteLoaderQQNT-Plugin-Brevity-btn",
     "branch": "main",
-    "use_release": {
-        "tag": "1.0.1",
-        "name": "LiteLoaderQQNT-Plugin-Brevity-btn-main.zip"
+    "release": {
+      "tag": "1.0.2"
     }
   },
   "platform": [
