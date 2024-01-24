@@ -13,9 +13,9 @@
 5. 点击开关图标
 
 ## 截图
+![image](https://github.com/hacker-frok/LiteLoaderQQNT-Plugin-Brevity-btn/assets/157203458/62039562-4ce7-4076-9b99-7482db1447f0)
 
-![image](https://github.com/hacker-frok/LiteLoaderQQNT-Plugin-Brevity-btn/assets/157203458/3bd09cbd-b2f6-48db-9541-a2b884869fe6)
+![image](https://github.com/hacker-frok/LiteLoaderQQNT-Plugin-Brevity-btn/assets/157203458/d8f072a3-d9b6-46a4-a104-3284b61da651)
 
-![image](https://github.com/hacker-frok/LiteLoaderQQNT-Plugin-Brevity-btn/assets/157203458/ff388ce0-2a1c-4baa-a473-0d70b8402d88)
 
 
