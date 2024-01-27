@@ -20,7 +20,7 @@ jobs:
           echo "done!"
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
-          repo_token: "${{ secrets.RELEASES_TOKEN }}"
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
           automatic_release_tag: "test"
           prerelease: true
           title: "预构建版本"
