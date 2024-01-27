@@ -1,6 +1,6 @@
 # LiteLoaderQQNT-Plugin-Brevity-btn
 
-### 隐藏QQNT整个侧栏部位，并在顶部添加快速显示/隐藏按钮，带来纯纯的聊天模式
+### 隐藏QQNT整个侧栏部位，并在顶部添加快速显示/隐藏按钮，带来纯纯的聊天模式 
 ### 目前仅支持LiteLoaderQQNT1.0.0及以上版本
 
 
