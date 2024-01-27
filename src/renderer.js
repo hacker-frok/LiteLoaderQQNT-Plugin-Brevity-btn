@@ -1,9 +1,12 @@
 function log(...args) {
   console.log(`\x1b[38m[QQ纯享模式]\x1b[0m`, ...args);
 }
-
+let macOSstyle=`right: 12px!important;left: inherit;top: 4px!important;position: fixed;app-region: no-drag;z-index: 99;cursor: pointer;pointer-events: all;right: 12px !important;`
+if (LiteLoader.os.platform != "darwin") {
+  macOSstyle=''
+}
 const BTN_HTML = `
-<div id="brevityBtn" style="transform:rotate(268deg)" role="button" tabindex="0" aria-label="侧栏收缩">
+<div id="brevityBtn" style="transform:rotate(268deg); ${macOSstyle}" role="button" tabindex="0" aria-label="侧栏收缩">
   <i class="q-icon " id="brevity-btn-icon" style="--c346ed76: inherit; --a7eb2210: 16px;">
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"> <polyline points="18 15 12 9 6 15"></polyline></svg>
   </i>
@@ -67,59 +70,32 @@ var customCssCode = `
         display: none !important;
     }
 }
- 
+/**macOS***/
+body[q-platform="darwin"] .container .contact-top-bar {
+  padding-top: 35px!important;
+}
+body[q-platform="darwin"] .nostalgic-qq-icon{
+    right: 12px!important;
+    left: inherit;
+    top: 4px;
+}
+body[q-platform="darwin"] .nostalgic-user-avatar{
+    margin-top: 15px!important;
+}
+body[q-platform="darwin"] .sidebar__upper {
+    padding-top: 34px!important;
+}
 /* ------------------- */
 `;
 
-var customCssCode2 = `
-/* -----   隐藏式侧栏 ------   */
 
-.nostalgic-qq-icon{
-  display:none;
-}
-.tab-container {
-  transition: margin-left .3s;
-}
-
-.sidebar~.tab-container {
-  transition: margin-left .3s ease-in-out;
-  margin-left: 85px;
-}
-
-.container .sidebar {
-    position: absolute;
-    left: 0;
-    width: 85px !important;
-    transition: all .3s ease-in-out;
-    overflow: visible;
-    & * {
-        overflow: visible !important;
-    }
-    z-index: 999;
-    .sidebar-nav {
-        width: 85px;
-        .sidebar__upper{
-          padding-top: 36px;
-       }
-    }
-    .sidebar__avatar {
-        transform: scale(calc(32 / 36));
-        transition: all .3s ease-in-out;
-        .user-avatar {
-          width: 52px !important;
-          height: 52px !important;
-          clip-path: inherit; 
-          
-      }
-    }
-   
-}
-
-/* ------------------- */
-`;
 const findFuncMenuInterval = setInterval(() => {
   // 获取功能菜单
-  const areaMenu = document.querySelector('.window-control-area')
+  let areaMenu = document.querySelector('.window-control-area')
+  if (LiteLoader.os.platform === "darwin") {
+    areaMenu = document.querySelector('#app')
+
+  }
   const funcMenu = document.querySelector('.func-menu')
   if (areaMenu && funcMenu) {
     clearInterval(findFuncMenuInterval)
