@@ -137,12 +137,12 @@ const findFuncMenuInterval = setInterval(() => {
           document.querySelector('#brevityBtn').style.transform = 'rotate(270deg)'
         } else {
           //兼容QQ怀旧模式插件
-          if(LiteLoader?.plugins?.nostalgic){
-            insertCssSection('BrevityBtn', LiteLoader?.plugins?.nostalgic?.disabled?customCssCode:customCssCode2);
-          }else{
-            insertCssSection('BrevityBtn', customCssCode);
-          }
-         
+          // if(LiteLoader?.plugins?.nostalgic){
+          //   insertCssSection('BrevityBtn', LiteLoader?.plugins?.nostalgic?.disabled?customCssCode:customCssCode2);
+          // }else{
+          //   insertCssSection('BrevityBtn', customCssCode);
+          // }
+          insertCssSection('BrevityBtn', customCssCode);
           document.querySelector('#brevityBtn').style.transform = 'rotate(180deg)'
         }
       }
