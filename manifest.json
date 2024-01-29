@@ -3,7 +3,7 @@
   "type": "extension",
   "name": "QQ纯享模式",
   "slug": "brevity-btn",
-  "description": "隐藏侧栏部位，并在顶部添加快速显示/隐藏按钮，带来纯纯的聊天模式.",
+  "description": "完全隐藏QQNT整个左边侧栏部位，并在顶部添加快速显示/隐藏按钮，不用再烦恼左边杂乱的图标了，带来纯纯的聊天模式.",
   "version": "1.0.4",
   "icon": "./icon.png",
   "thumbnail": "./icon.png",
