@@ -78,7 +78,7 @@ function watchSettingsChange(webContents, settingsPath) {
             config
         );
 
-    }, 100));
+    }, 500));
 }
 
 // 创建窗口时触发
