@@ -1,6 +1,6 @@
 const plugin_path = LiteLoader.plugins["brevity-btn"].path.plugin;
 function log(...args) {
-  console.log(`\x1b[38m[QQ纯享模式]\x1b[0m`, ...args);
+  console.log(`\x1b[31m[QQ纯享模式]\x1b[0m`, ...args);
 }
 let settingsConfig = await btnBrevity.getSettings();
 
@@ -156,7 +156,7 @@ export const onSettingWindowCreated = async view => {
   log('打开设置界面')
   try {
     //设置设置界面的图标
-
+    settingsConfig = await btnBrevity.getSettings();
     document.querySelectorAll(".nav-item.liteloader").forEach(node => {
       //log(node.textContent)
       if (node.textContent === "QQ纯享模式") {
@@ -175,7 +175,7 @@ export const onSettingWindowCreated = async view => {
     let index = 0
     items.forEach(function (item) {
       index++
-      if (settingsConfig.icon.indexOf(`btnBrevity-icon${index}`) != -1) {
+      if (settingsConfig.icon.indexOf(`btnBrevity-icon${index}"`) != -1||settingsConfig.icon.indexOf(`btnBrevity-icon${index}\\"`) != -1) {
         item.classList.add("btnBrevity-icon-item-select")
       }
       item.addEventListener('click', function (event) {

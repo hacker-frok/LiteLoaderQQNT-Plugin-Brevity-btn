@@ -7,7 +7,7 @@ let mainWindow
 const pluginDataPath = LiteLoader.plugins["brevity-btn"].path.data;
 const settingsPath = path.join(pluginDataPath, "settings.json");
 function log(...args) {
-    console.log(`\x1b[38m[QQ纯享模式]\x1b[0m`, ...args);
+    console.log(`\x1b[31m[QQ纯享模式]\x1b[0m`, ...args);
 }
 // fs判断插件路径是否存在，如果不存在则创建（同时创建父目录（如果不存在的话））
 if (!fs.existsSync(pluginDataPath)) {
