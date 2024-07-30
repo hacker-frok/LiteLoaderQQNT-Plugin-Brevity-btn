@@ -40,6 +40,12 @@ function removeCssSection(sectionId) {
 var customCssCode = `
 /* -----   隐藏式侧栏 ------   */
 
+.sidebar-nav .sidebar__upper .qq-logo {
+    display: none!important;
+}
+.sidebar-nav .sidebar__upper.sidebar__upper--with-logo .sidebar__avatar {
+    margin-top: 8px;
+}
 .contact-top-bar .top-bar__search{
   padding-left: 28px!important;
 }
@@ -98,6 +104,13 @@ const switchStatus = (status) => {
     if (!isCssSectionExist('BrevityBtn')) {
       insertCssSection('BrevityBtn', customCssCode);
       document.querySelector('#brevityBtn').style.transform = 'rotate(-90deg)'
+      // 检查是否存在.qq-logo元素
+      let qqLogo = document.querySelector('.sidebar-nav .sidebar__upper .qq-logo');
+      if (qqLogo) {
+          // 如果存在，给.sidebar__upper添加一个特定的类
+          let sidebarUpper = document.querySelector('.sidebar-nav .sidebar__upper');
+          sidebarUpper.classList.add('sidebar__upper--with-logo');
+      }
     }
 
   } else {
